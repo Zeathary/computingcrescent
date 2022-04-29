@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<!--
+	Page for Viewing Posts one at a time with their respective comment sections
+-->
+<html>
+	<head>
+		<title>Single Post</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">The Computing Crescent</a></h1>
+						<nav class="links">
+							<ul>
+<!--								<li><a href="createpost.html">Create a Post</a></li>-->
+<!--								<li><a id="logout">Logout</a></li>-->
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+<!--								<li class="search">-->
+<!--									<a class="fa-search" id="search-icon">Search</a>-->
+<!--									<form id="search" class="visible" method="get" action="#">-->
+<!--										<input type="text" id="search-bar" name="query" placeholder="Search Users" />-->
+<!--									</form>-->
+<!--								</li>-->
+								<li class="links">
+									<div><i id="back-arrow" class="fas fa-arrow-left"></i></div>
+
+								</li>
+								<li class="links" id="username"></li>
+								<li class="menu">
+									<a id="menu-icon" class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<section id="menu">
+
+					<!-- Search -->
+<!--					<section>-->
+<!--						<form id='search2' class="search" method="get" action="#">-->
+<!--							<input type="text" id='search-bar2' name="query" placeholder="Search Users" />-->
+<!--						</form>-->
+<!--					</section>-->
+
+					<!-- Links -->
+					<section>
+						<ul class="links">
+							<li>
+								<a href="createpost.html">
+									<h3>Create a New Post</h3>
+									<p>Share with the world</p>
+								</a>
+							</li>
+							<li>
+								<a id="menu-delete-post" href="#">
+									<h3>Delete a Post</h3>
+									<p>Warning: this cannot be reversed</p>
+								</a>
+							</li>
+							<li>
+								<a id="menu-manage-comments" href="managecomments.html">
+									<h3>View Comments</h3>
+									<p>Manage and Delete Your own Comments</p>
+								</a>
+							</li>
+							<li>
+								<a id="menu-delete-acc" href="#">
+									<h3>Delete Account</h3>
+									<p>Warning: this cannot be reversed</p>
+								</a>
+							</li>
+						</ul>
+					</section>
+
+					<!-- Actions -->
+					<section>
+						<ul class="actions stacked">
+							<li><a id="logout" class="button large fit">Log Out</a></li>
+						</ul>
+					</section>
+
+				</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Posts -->
+
+
+						<!--Comment Section-->
+						<div id="comment-section">
+
+						</div>
+
+						<!--Create Comment mini form-->
+						<div id="comment-form">
+							<label>Create Comment</label>
+							<input type="text" name="comment" id="comment-input" placeholder="Add a comment...."><br>
+							<button id="create-comment">Comment</button>
+							<button id="cancel-comment" onclick="document.getElementById('comment-input').value = ''" >Cancel</button>
+						</div>
+
+
+
+					</div>
+
+
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+				integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+				crossorigin="anonymous"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/check-login.js"></script>
+		<script src="js/single.js"></script>
+		<script src="js/deletepost.js"></script>
+		<script src="js/deleteacc.js"></script>
+
+	</body>
+</html>

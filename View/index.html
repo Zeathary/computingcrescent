@@ -1,0 +1,159 @@
+<!--Based on the Future Imperfect template by HTML 5 UP-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Computing Crescent</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="index.html">The Computing Crescent</a></h1>
+            <nav class="links">
+                <ul>
+<!--                    <li><a href="createpost.html">Create a Post</a></li>-->
+<!--                    <li><a id="logout">Logout</a></li>-->
+                </ul>
+            </nav>
+            <nav class="main">
+                <ul>
+                    <li class="search">
+                        <a class="fa-search" id="search-icon">Search</a>
+                        <form id="search" class="visible" method="get" action="#">
+                            <input type="text" id="search-bar" name="query" placeholder="Search Users" />
+                        </form>
+                    </li>
+                    <li class="links" id="username"><img id="user-avatar" src=""  onerror="this.onerror=null; this.src='pics/default.png'" ></li>
+                    <li class="menu">
+                        <a id="menu-icon" class="fa-bars" href="#menu">Menu</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Menu -->
+        <section id="menu">
+
+            <!-- Search -->
+            <section>
+                <form id='search2' class="search" method="get" action="#">
+                    <input type="text" id='search-bar2' name="query" placeholder="Search Users" />
+                </form>
+            </section>
+
+            <!-- Links -->
+            <section>
+                <ul class="links">
+                    <li>
+                        <a href="createpost.html">
+                            <h3>Create a New Post</h3>
+                            <p>Share with the world</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="menu-delete-post" href="#">
+                            <h3>Delete a Post</h3>
+                            <p>Warning: this cannot be reversed</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="menu-manage-comments" href="managecomments.html">
+                            <h3>View Comments</h3>
+                            <p>Manage and Delete Your own Comments</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="menu-delete-acc" href="#">
+                            <h3>Delete Account</h3>
+                            <p>Warning: this cannot be reversed</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Actions -->
+            <section>
+                <ul class="actions stacked">
+                    <li><a id="logout" class="button large fit">Log Out</a></li>
+                </ul>
+            </section>
+
+        </section>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Posts go Here -->
+
+            <!-- Pagination -->
+            <ul class="actions pagination">
+                <li><a href="" class="disabled button large previous" id="previous-button">Previous Page</a></li>
+                <li><a href="#" class="button large next" id="next-button">Next Page</a></li>
+            </ul>
+
+        </div>
+        <!-- Sidebar -->
+        <section id="sidebar">
+
+            <!-- Intro -->
+            <section id="intro">
+                <a href="#" class="logo"><img src="images/logo.jpg" alt="" /></a>
+                <header>
+                    <h2>The Computing Crescent</h2>
+                    <p>Blog created by Zack Heath for CSIS 314</a></p>
+                </header>
+            </section>
+
+            <!-- Medium Posts -->
+            <!--<section>
+                <div id="med-posts" class="mini-posts">
+                </div>
+            </section>-->
+
+            <!-- Posts List -->
+            <section>
+                <ul id="mini-post-list" class="posts">
+                </ul>
+            </section>
+
+            <!-- About -->
+            <section class="blurb">
+                <h2>About</h2>
+                <p>Creating a blog site is the final project of the CSIS 314 Client-Server Systems course at George Fox University. It involves designing and implementing your own REST API along with creating a web application front-end. The application enables users to log in and out, post blog entries, and comments. </p>
+                <ul class="actions">
+                    <li><a href="http://jorr.cs.georgefox.edu/courses/csis314-client-server/" class="button">Learn More</a></li>
+                </ul>
+            </section>
+
+            <!-- Footer -->
+            <section id="footer">
+                <ul class="icons">
+                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+                    <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+                <p class="copyright">&copy; The Computing Crescent: Zack Heath.</p>
+            </section>
+
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <script src="js/util.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/check-login.js"></script>
+    <script src="js/deletepost.js"></script>
+    <script src="js/deleteacc.js"></script>
+</body>
+</html>
